@@ -20,7 +20,6 @@ nav{
 .logo{
     width: 40px;
     padding: 1.25rem 0;
-
     text-align: center;
 }
 .navbar{
@@ -54,6 +53,13 @@ nav{
 .card_menu{
     position: relative;
 }
+.card_menu a{
+    color: #8c8e8f;
+}
+.card_menu a:hover{
+    color: #1b1e21;
+    text-decoration: none;
+}
 .card{
     z-index: 3;
     border-radius: 6px;
@@ -64,7 +70,6 @@ nav{
 }
 
 .funzionalità{
-    display: none;
     width: 75%;
     position: absolute;
     top: 50%;
@@ -86,7 +91,7 @@ nav{
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(172%, 0);
+    transform: translate(138%, 0);
 }
 .chiSiamo{
     display: none;
@@ -94,7 +99,7 @@ nav{
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(282%, 0);
+    transform: translate(246%, 0);
 }
 .aiuto{
     display: none;
@@ -102,7 +107,7 @@ nav{
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(305%, 0);
+    transform: translate(276%, 0);
 }
 
 .active{
@@ -114,4 +119,22 @@ nav{
 }
 ul li{
     list-style: none;
+}
+
+a.btn_accedi{
+    color: black;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: #ededed;
+    padding: 13px 20px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.btn_app{
+    color: white;
+    border: 1px solid #191c1f;
+    border-radius: 10px;
+    background-color: #191c1f;
+    padding: 10px;
 }
