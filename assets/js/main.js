@@ -5,7 +5,8 @@
 
 $(function() {
     $('.navbar_right a').eq(0).mouseenter(function() {
-        // $('.abbonamenti').addClass('active');
+        $('.d_none ').removeClass('d_none');
+        $('.funzionalità div').addClass('active');
     });
 
     $('.navbar_right a').eq(1).mouseenter(function() {
@@ -22,6 +23,7 @@ $(function() {
 
     $('.navbar_right a').mouseleave(function() {
         $('.card').siblings().removeClass('active');
+        $('.funzionalità').addClass('d_none');
     });
 
 });

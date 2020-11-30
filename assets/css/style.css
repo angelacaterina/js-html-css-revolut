@@ -63,6 +63,23 @@ nav{
     line-height: 2;
 }
 
+.funzionalità{
+    display: none;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 20px;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: row;
+}
 .abbonamenti{
     display: none;
     width: 11%;
@@ -92,7 +109,9 @@ nav{
     display: block;
     /* display: flex; */
 }
-
+.d_none{
+    display: none;
+}
 ul li{
     list-style: none;
 }
