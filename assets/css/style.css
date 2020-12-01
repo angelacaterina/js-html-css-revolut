@@ -10,18 +10,22 @@ body{
   
 /* Utility display */
 .d_none{
-    display: none;
+    display: none!important;
 }
 .active{
     display: block;
 }
-  
 .d-flex{
     display: flex;
 }
 .justify_between{
     justify-content: space-between;
 }
+
+.column{
+    width: calc(100% / 4);
+}
+
   
 /* position */
 .position_rel{
