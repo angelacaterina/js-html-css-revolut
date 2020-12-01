@@ -7,129 +7,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Revolut</title>
   </head>
 
   <body>
   <header id="site_header">
-    <nav>
-      <div class="logo">
-        <a href="#">
-          <img src="assets/img/revolut.svg" alt="">
-        </a>
-      </div><!-- /.logo -->
-  
-      <div class="navbar">
-        <div class="navbar_left">
-          <ul class="list-inline">
-            <li>
-              <a href="#" class="active">Personale</a>
-            </li>
-            <li>
-              <a href="#">Bussines</a>
-            </li>
-          </ul>
+    <nav class="navbar d-flex justify_between">
+      <div class="navbar_left">
+        <ul class="list_style_none p_20">
+          <li>
+            <a href="#"><img class="logo" src="assets/img/revolut.svg" alt=""></a>
+          </li>
+          <li><a href="#" class="active">Personale</a></li>
+          <li><a href="#">Bussines</a></li>
+        </ul>
+      </div><!-- /.navbar_left -->
 
-
-        </div><!-- /.navbar_left -->
-        
-        <div class="navbar_right">
-          <ul class="list-inline">
-            <li>
-              <a href="#">Funzionalità</a>
-            </li>
-            <li>
-              <a href="#">Abbonamenti</a>
-            </li>
-            <li>
-              <a href="">Chi siamo</a>
-            </li>
-            <li>
-             <a href="">Aiuto</a> 
-            </li>
-            <li>
-              <a href="#" class="btn_accedi">Accedi</a>
-              <button class="btn_app">Scarica l'app</button>
-            </li>
-          </ul>
-        </div><!-- /.navbar_right -->
-      </div>
-      <!-- /.navbar -->
+      <div class="navbar_right d-flex">
+        <ul class="list_style_none p_20">
+          <li class="position_rel dropdown">
+            <a href="#">Funzionalità</a>
+            <ul class="position_ab list_style_none dropdown_menu d_none">
+              <li><a href="#">Budget e statistiche</a></li>
+              <li><a href="#">Carte</a></li>
+              <li><a href="#">Conto Junior</a></li>
+            </ul>
+          </li>
+          <li class="position_rel dropdown">
+            <a href="">Abbonamenti</a>
+            <ul class="position_ab list_style_none dropdown_menu d_none">
+              <li><a href="#">Standard</a></li>
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">Metal</a></li>
+              <li><a href="#">Confronta i piani</a></li>
+            </ul>
+          </li>
+          <li class="position_rel dropdown">
+            <a href="">Chi siamo</a>
+            <ul class="position_ab list_style_none dropdown_menu d_none">
+              <li><a href="#">Chi siamo</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Influencer</a></li>
+              <li><a href="#">Lavora con noi</a></li>
+              <li><a href="#">Cultira</a></li>
+              <li><a href="#">Diversiità e inclusione</a></li>
+              <li><a href="#">Contatto</a></li>
+            </ul>
+          </li>
+          <li class="position_rel dropdown">
+           <a href="">Aiuto</a>
+           <ul class="position_ab list_style_none dropdown_menu d_none">
+             <li><a href="#">Centro assistenza</a></li>
+             <li><a href="#">Community</a></li>
+             <li><a href="#">Sicurezza</a></li>
+             <li><a href="#">Stato di sistema</a></li>
+             <li><a href="#">API sviluppatore</a></li>
+           </ul>
+          </li>
+          <li><a href="">IT</a></li>
+          <li>
+            <a href="#" class="btn_accedi">Accedi</a>
+            <button class="btn_app">Scarica l'app</button>
+          </li>
+        </ul>
+      </div><!-- /.navbar_right -->
     </nav>
 
-    <div class="card_menu">
-      <div class="card funzionalità d-flex d_none">
-        <div class="column d_none">
-          <ul>
-            <li><a href="#">Budget e statistiche</a></li>
-            <li><a href="#">Carte</a></li>
-            <li><a href="#">Conto Junior</a></li>
-          </ul>
-        </div>
-
-        <div class="column d_none">
-          <ul>
-            <li><a href="#">Azioni</a></li>
-            <li><a href="#">Crypto</a></li>
-            <li><a href="#">Prodotti</a></li>
-            <li><a href="#">Salvadanai</a></li>
-          </ul>
-        </div>
-
-        <div class="column d_none">
-          <ul>
-            <li><a href="#">Trasferimenti di denaro</a></li>
-            <li><a href="#">Fatture di gruppo</a></li>
-            <li><a href="#">Abbonamenti</a></li>
-          </ul>
-        </div>
-
-        <div class="column d_none">
-          <ul>
-            <li><a href="#">Donazioni</a></li>
-            <li><a href="#">Assicurazione internazionale</a></li>
-            <li><a href="#">Assicurazione del dispositivo</a></li>
-            <li><a href="#">Sicurezza</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="card abbonamenti">
-        <ul>
-          <li><a href="#">Standard</a></li>
-          <li><a href="#">Premium</a></li>
-          <li><a href="#">Metal</a></li>
-          <li><a href="#">Confronta i piani</a></li>
-        </ul>
-      </div>
-      <div class="card chiSiamo">
-        <ul>
-          <li><a href="#">Chi siamo</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Leadership</a></li>
-          <li><a href="#">Affiliate</a></li>
-          <li><a href="#">Influencer</a></li>
-          <li><a href="#">Lavora con noi</a></li>
-          <li><a href="#">Cultira</a></li>
-          <li><a href="#">Diversiità e inclusione</a></li>
-          <li><a href="#">Contatto</a></li>
-        </ul>
-      </div>
-      <div class="card aiuto">
-        <ul>
-          <li><a href="#">Centro assistenza</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Sicurezza</a></li>
-          <li><a href="#">Stato di sistema</a></li>
-          <li><a href="#">API sviluppatore</a></li>
-        </ul>
-      </div>
-      
-    </div>
-    <!-- /.card_menu -->
-
-    
   </header>
   <!-- /#site_header -->
 

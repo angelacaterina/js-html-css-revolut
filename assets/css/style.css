@@ -7,39 +7,44 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-
-nav{
-    width: 90%;
-    height: 70px;
-    margin: auto;
-    padding: 1.25rem 0;
+  
+/* Utility display */
+.d_none{
+    display: none;
+}
+.active{
+    display: block;
+}
+  
+.d-flex{
     display: flex;
-    flex-direction: row;
 }
-
-.logo{
-    width: 40px;
-    padding: 1.25rem 0;
-    text-align: center;
+.justify_between{
+    justify-content: space-between;
 }
-.navbar{
-    width: calc(100% - 40px);
-    padding: 1.25rem 0;
-    display: flex;
-    flex-direction: row;
+  
+/* position */
+.position_rel{
+    position: relative;
 }
-.navbar_left{
-    width: 30%;
-    padding-left: 20px;
+.position_ab{
+    position: absolute;
 }
-.navbar_right{
-    width: 70%;
-    text-align: right;
+  
+/* utiliyi style */
+.list_style_none{
+    list-style: none;
 }
-
+  
+/* padding */
+.p_20{
+    padding: 20px;
+}
+  
+/***navbar***/
 .navbar a{
     color: #8c8e8f;
-    padding: 0 19px;
+    text-decoration: none;
 }
 .navbar a:hover{
     color: #1b1e21;
@@ -49,78 +54,47 @@ nav{
     font-weight: 600;
     color: #1b1e21;
 }
-
-.card_menu{
-    position: relative;
+  
+.navbar_left ul li,
+.navbar_right > ul > li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
 }
-.card_menu a{
+  
+/* logo */
+.logo{
+    width: 40px;
+}
+/* navbar_left */
+.navbar_left a{
+    text-transform: uppercase;
+}
+/* navbar_right */
+.navbar_right{
+    align-items: center;
+}
+  
+/* dropdown */
+.dropdown_menu{
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px lightgray;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dropdown_menu li{
+    padding: 8px 15px;
+}
+.dropdown_menu a{
     color: #8c8e8f;
 }
-.card_menu a:hover{
+.dropdown_menu a:hover{
     color: #1b1e21;
     text-decoration: none;
 }
-.card{
-    z-index: 3;
-    border-radius: 6px;
-    box-shadow: 2px 2px 10px lightgray;
-    padding: 10px;
-    text-align: left;
-    line-height: 2;
-}
-
-.funzionalità{
-    width: 75%;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    padding: 20px;
-}
-.d-flex{
-    display: flex;
-    flex-direction: row;
-}
-.column{
-    width: calc(100% / 4);
-    display: flex;
-    flex-direction: row;
-}
-.abbonamenti{
-    display: none;
-    width: 11%;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(138%, 0);
-}
-.chiSiamo{
-    display: none;
-    width: 10%;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(246%, 0);
-}
-.aiuto{
-    display: none;
-    width: 13%;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(276%, 0);
-}
-
-.active{
-    display: block;
-    /* display: flex; */
-}
-.d_none{
-    display: none;
-}
-ul li{
-    list-style: none;
-}
-
+  
+/* bottons */
 a.btn_accedi{
     color: black;
     border: 1px solid #ededed;
@@ -130,11 +104,11 @@ a.btn_accedi{
     margin-right: 15px;
     margin-left: 20px;
 }
-
+  
 .btn_app{
     color: white;
     border: 1px solid #191c1f;
     border-radius: 10px;
     background-color: #191c1f;
-    padding: 10px;
+    padding: 15px;
 }
