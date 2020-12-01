@@ -97,7 +97,18 @@ body{
     color: #1b1e21;
     text-decoration: none;
 }
-  
+
+li.title{
+    color: #8c8e8f;
+    font-size: 12px;
+}
+i.fas{
+    font-size: 0.75rem;
+    color: white;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 50%;
+}
 /* bottons */
 a.btn_accedi{
     color: black;
